@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title>calculator</title>
+
+    <style>
+    #myDiv{
+        padding:1px;
+        border-radius:1em;
+    }
+
+        table{
+                border:1px solid beige ;
+                margin-left: auto;
+                margin-right: auto;
+        }
+        input[type="button"]{
+            width: 110;
+            padding: 20px 30px;
+            background-color:rgba(14, 11, 11, 0.519);
+            color:rgb(228, 221, 221);
+            font-size: 30px
+            font-weight: bold; 
+            border: none;
+            border-radius: 45px;
+            box-shadow: -8px -8px 15px rgb(12, 0, 0);
+            cursor: pointer;
+        }
+
+        input[type="text"]{
+            padding: 35px 50px;
+            background-color:rgb(245, 237, 241);
+            border: solid rgb(12, 0, 0);
+            color: rgb(205, 190, 190);
+            width: 40%;
+            height:7%;
+        }
+        
+        body{   
+            background-image:url('https://us.123rf.com/450wm/yurolaitsalbert/yurolaitsalbert1609/yurolaitsalbert160900079/69126587-calculator-at-the-workplace-of-thebusinessman.jpg?ver=6%27');
+            background-size:100%;
+            border-style: ridge;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id=calci>
+    <br>
+    <br>
+    <script type="text/javascript">
+        function insert(num)
+        {
+            document.form.getElementById.value=document.form.getElementById.value+num;
+            document.form.getElementById.style.color="black";
+        }
+        function equal()
+        {
+            var exp=document.form.getElementById.value;
+            if(exp){
+                document.form.getElementById.value=eval(document.form.getElementById.value);
+            }
+        } 
+        function c(){
+            document.form.getElementById.value=" "
+        }
+
+    </script>
+    </div>
+
+
+<center>
+
+    <div id=myDiv>
+        <form name="form"class="view">
+        <input type="text"name="getElementById">
+        <br>
+        <br>
+        <input type="button" value="c" onclick="c()"/>
+        <input type="button" value="DE" onclick="insert('DE')"/>
+        <input type="button" value="%" onclick="insert('%')"/>
+        <input type="button" value="/" onclick="insert('/')"/>
+        <br>
+        <br>
+        <input type="button" value="7" onclick="insert(7)"/>
+        <input type="button" value="8" onclick="insert(8)"/>
+        <input type="button" value="9" onclick="insert(9)"/>
+        <input type="button" value="+" onclick="insert('+')"/>
+        <br>
+        <br>
+        <input type="button" value="4" onclick="insert(4)"/>
+        <input type="button" value="5" onclick="insert(5)"/>
+        <input type="button" value="6" onclick="insert(6)"/>
+        <input type="button" value="-" onclick="insert('-')"/>
+        <br>
+        <br>
+        <input type="button" value="1" onclick="insert(1)"/>
+        <input type="button" value="2" onclick="insert(2)"/>
+        <input type="button" value="3" onclick="insert(3)"/>
+        <input type="button" value="*" onclick="insert('*')"/>
+        <br>
+        <br>
+        <input type="button" value="00" onclick="insert('00')"/>
+        <input type="button" value="0" onclick="insert(0)"/>
+        <input type="button" value="." onclick="insert('.')"/>
+        <input type="button" value="=" onclick="equal()"/>
+        <br>
+        <br>
+        </form>
+        </div>
+        </body>
+        </html>
